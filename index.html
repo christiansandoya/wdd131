@@ -3,9 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Christian Sandoya | Personal information, HTML, CSS, and JavaScript">
+    <meta name="author" content="Christian Sandoya">
+    <title>WDD 131 – Dynamic Web Fundamentals – Christian Sandoya</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-   <h1>Christian Sandoya -  It's me again!</h1> 
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://www.linkedin.com/in/christian-flavio-sandoya-suarez-4857b5280">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/36?lang=eng&id=p20-p21#p20">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Christian Flavio Sandoya Suarez</h1>
+        <section class="card about-me">
+            <h2>About Me</h2>
+            <p class="me">Hi! I’m Christian, a Software Development student who enjoys learning, creating, and solving problems through technology. I’m especially interested in web development and building projects that turn ideas into useful and practical solutions. Outside of programming, I enjoy working on business projects, developing new skills, and challenging myself to keep growing. I’m always looking for opportunities to learn something new and improve the things I create, one project at a time.</p>
+            <img src="images/profile_picture.jpg" class="profile-picture" alt="Profile Picture">
+            <h3>Lima, Peru</h3>
+            <p class="flag">Peru is a country in South America with a rich history, diverse culture, and beautiful landscapes. It is home to the Andes Mountains, the Amazon rainforest, and a long Pacific coastline. Peru is also famous for its ancient civilizations, especially the Inca Empire, as well as its traditional music, dances, and delicious food. The Peruvian flag is one of the country's most important national symbols. It has three vertical stripes: two red stripes on the sides and a white stripe in the middle. The red represents the courage and sacrifice of the Peruvian people, while the white represents peace, purity, and justice. The flag reflects Peru's history, identity, and the pride that Peruvians have for their country.</p>
+            <img src="images/Flag_of_Peru.svg" class="peru-flag" alt="Official Flag of Peru">
+        </section>
+        <section class="card resources">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://byui-cse.github.io/wdd131-ww-course/">WDD 131 Course Website</a></li>
+                <li><a href="https://byui-cse.github.io/wdd131-ww-course/week01/prepare-naming-conventions.html">Naming Conventions</a></li>
+                <li><a href="https://byui-cse.github.io/wdd131-ww-course/week01/prepare-javascript-introduction.html">JavaScript Introduction</a></li>
+                <li><a href="https://byui-cse.github.io/wdd131-ww-course/week01/prepare-variables.html">JavaScript Variables</a></li>
+                <li><a href="https://byui-cse.github.io/wdd131-ww-course/week02/prepare-js-constructs.html">JavaScript Constructs</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Christian Sandoya | Peru</p>
+        <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>

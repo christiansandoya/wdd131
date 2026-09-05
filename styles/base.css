@@ -1,0 +1,153 @@
+body {
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  grid-template: auto 1fr auto / 1fr;
+}
+
+header {
+  display: grid;
+}
+
+header span {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(33, 36, 112);
+    color: white;
+}
+
+h1 {
+    grid-column: 1 / 3;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    color: rgb(4, 0, 0)
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    color:white
+}
+
+.navigation a:hover {
+    color: yellow;
+	text-decoration: underline;
+	text-decoration-color: yellow;
+}
+
+main {
+    display: grid;
+    grid-template: auto 1fr / 2.5fr 1.5fr;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    background-color: rgb(33, 36, 112);
+    padding: 1rem;
+    margin: 0;
+}
+
+.card {
+    margin: 1rem;
+    padding: 0;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.about-me {
+    display: grid;
+    grid-template: auto auto auto auto / 1fr 1.5fr 1fr;
+    padding: 1rem;
+    background-color: #eee
+}
+
+.about-me h2 {
+    grid-column: 1 / 4;
+}
+
+.me {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    padding: 1rem;
+}
+
+.about-me h3 {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    text-align: center;
+    align-self:self-end;
+    text-decoration: underline;
+}
+
+.profile-picture {
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+    width: 200px;
+    height: auto;
+    justify-self: center;
+}
+
+.flag {
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
+    padding: 1rem;
+}
+
+.peru-flag {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    width: 200px;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+}
+
+.resources {
+    padding: 1rem;
+    background-color: #eee;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.resources ul {
+    align-self: center;
+    justify-self: center;
+}
+
+.resources li {
+    margin: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(33, 36, 112);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.last-modified {
+    font-size: 0.8rem;
+    text-align: center;
+    color: yellow;
+}
