@@ -2,15 +2,26 @@ const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('ul');
 
-const li = document.createElement('li');
+button.addEventListener('click', function() {
+    if(input.value.trim() !=='') {
+        const li = document.createElement('li');
 
-const deleteButton = document.createElement('button');
+        const deleteButton = document.createElement('button');
 
-li.textContent = input.value;
+        li.textContent = input.value;
 
-deleteButton.textContent = '❌';
-deleteButton.setAttribute('aria-label', 'Remove Alma 5');
+        deleteButton.textContent = '❌';
+        deleteButton.setAttribute('aria-label', 'Remove chapter');
+        deleteButton.addEventListener('click', function (){
+            list.removeChild(li);
+            input.focus();
+        })
 
-li.append(deleteButton);
+        li.append(deleteButton);
 
-list.append(li);
+        list.append(li);
+    } else {
+        input.focus();
+    }
+});
+
