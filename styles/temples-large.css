@@ -13,12 +13,11 @@
         content: "";
     }
     
-    main {
-        display: grid;
-        grid-template: auto 1fr 1fr 1fr / 1fr 1fr 1fr;
-    }
-
     main h1 {
         grid-column: 1/4;
     }
+}
+
+nav{
+    display: flex;
 }
