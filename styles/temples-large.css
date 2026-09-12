@@ -5,19 +5,27 @@
     padding: 1rem;
     }
 
-    .navigation {
+    #menu {
         display: flex;
     }
 
     #menu::before {
         content: "";
     }
+
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
     
     main h1 {
-        grid-column: 1/4;
+        grid-column: 1/-1;
     }
-}
 
-nav{
-    display: flex;
+    nav{
+        display: flex;
+    }
+
+    .navigation {
+        display: flex;
+    }
 }
