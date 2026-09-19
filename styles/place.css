@@ -1,0 +1,98 @@
+:root {
+    --primary-color: rgb(170, 4, 4);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 1rem;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.weather-icon {
+    width: 70px;
+    display: block;
+    margin: 0 auto;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 0.3rem;
+}
+
+dt {
+    text-align: end;
+}
+
+dd {
+    margin-left: 10px;
+    text-align: start;
+}
+
+@media screen and (min-width: 1000px) {
+   main {
+    position: relative;
+   }
+
+   picture {
+    display: block;
+    width: 100%;
+   }
+
+   section {
+    position: absolute;
+    width: 320px;
+    background-color: white;
+   }
+
+   h2 {
+    background-color: var(--primary-color);
+    color: white;
+   }
+
+   section:nth-of-type(1) {
+    top: 2rem;
+    left: 2rem;
+   }
+
+   section:nth-of-type(2) {
+    bottom: 2rem;
+    right: 2rem;
+   }
+
+   .weather-icon {
+    display: none;
+   }
+
+   section:nth-of-type(2) h2::after {
+    content: " 🌤️";
+   }
+}

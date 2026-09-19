@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Christian Sandoya - W03 Assignment: Country Page</title>
+    <meta name="description" content="Discover Peru through its climate, population, language and fascinating facts about this diverse South American country.">
+    <meta name="author" content="Christian Sandoya">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Peru</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/lima_peru.webp" media="(min-width: 1000px)">
+            <img src="images/machu_picchu.webp" alt="Machu Picchu, Cuzco, Peru">
+        </picture>
+        <section>
+            <h2>Data</h2>
+            <dl>
+                <dt>Area:</dt><dd>1 285 215 km²</dd>
+                <dt>Population:</dt><dd>34,157,732</dd>
+                <dt>Capital:</dt><dd>Lima</dd>
+                <dt>Languages:</dt><dd>Spanish, Quechua, Aymara.</dd>
+                <dt>Currency:</dt><dd>Peruvian Sol (PEN)</dd>
+                <dt>Time Zone:</dt><dd>UTC-5</dd>
+                <dt>Calling Code:</dt><dd>+51</dd>
+                <dt>Internet TLD:</dt><dd>.pe</dd>
+            </dl>
+        </section>
+        <section>
+            <h2>Weather</h2>
+            <img class="weather-icon" src="images/weather.svg" alt="Weather icon">
+            <dl>
+                <dt>Temperature:</dt><dd>20°</dd>
+                <dt>Conditions:</dt><dd>Partly Cloudy</dd>
+                <dt>Wind:</dt><dd>8km/h</dd>
+                <dt>Wind Chill:</dt><dd id="windChill"></dd>
+            </dl>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Christian Sandoya | Peru</p>
+        <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
