@@ -113,7 +113,7 @@ function displayTemples(temples, title) {
             <p>Area: ${temple.area} sq ft</p>`;
 
         card.innerHTML += `
-            <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">`;
+            <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy" width="400" height="250"> `;
         main.appendChild(card);
     });
 }
