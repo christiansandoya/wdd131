@@ -1,0 +1,16 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-family: "Cinzel", serif;
+    color: #ffe81f;
+}
+
+footer{
+    text-align: center;
+}
