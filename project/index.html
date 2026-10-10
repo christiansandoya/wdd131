@@ -63,6 +63,27 @@
                 </article>
             </div>
         </section>
+        <section class="feedback-section">
+            <h2>Share Your Favorite</h2>
+            <p>What do you enjoy most about The Clone Wars? Share your favorite and tell us why.</p>
+            <form id="favoriteForm">
+                <label for="visitorName">Your Name (optional)</label>
+                <input type="text" id="visitorName" name="visitorName">
+                <label for="favoriteTopic">Your Favorite Topic</label>
+                <select id="favoriteTopic" name="favoriteTopic" required>
+                    <option value="" selected disabled>Choose a topic</option>
+                    <option value="jedi">Jedi</option>
+                    <option value="sith">Sith</option>
+                    <option value="clone-troopers">Clone Troopers</option>
+                    <option value="battle-droids">Battle Droids</option>
+                    <option value="battles">Battles</option>
+                </select>
+                <label for="favoriteReason">Why is it your favorite?</label>
+                <textarea
+                    id="favoriteReason" name="favoriteReason" rows="5" required></textarea>
+                <button type="submit">Share My Favorite</button>
+            </form>
+        </section>
     </main>
     <footer>
         <p>©<span id="currentyear"></span> | Christian Sandoya | Peru</p>

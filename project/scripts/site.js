@@ -152,3 +152,25 @@ if (document.body.classList.contains("battles-page")) {
 
     displayBattles(battles, "Major Battles of the Clone Wars");
 }
+
+const favoriteForm = document.querySelector("#favoriteForm");
+
+if (favoriteForm) {
+    favoriteForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const visitorName = document.querySelector("#visitorName").value.trim();
+        const favoriteTopic = document.querySelector("#favoriteTopic").value;
+        const favoriteReason = document.querySelector("#favoriteReason").value.trim();
+
+        const confirmation = document.createElement("p");
+        confirmation.setAttribute("role", "status");
+
+        const displayName = visitorName || "Star Wars fan";
+
+        confirmation.textContent =
+            `Thank you, ${displayName}! Your answer have been recorded`;
+
+        favoriteForm.replaceWith(confirmation);
+    });
+}

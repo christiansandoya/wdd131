@@ -194,6 +194,75 @@ footer {
     padding: 0 1rem;
 }
 
+/* Favorite feedback form */
+.feedback-section {
+    background-color: #111111;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.feedback-section h2 {
+    margin-top: 0;
+}
+
+.feedback-section p {
+    line-height: 1.6;
+}
+
+.feedback-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.feedback-section input,
+.feedback-section select,
+.feedback-section textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #777777;
+    border-radius: 4px;
+    background-color: #000000;
+    color: #ffffff;
+    font: inherit;
+}
+
+.feedback-section textarea {
+    resize: vertical;
+}
+
+.feedback-section input:focus,
+.feedback-section select:focus,
+.feedback-section textarea:focus {
+    outline: 2px solid #ffe81f;
+    outline-offset: 2px;
+}
+
+.feedback-section button {
+    align-self: flex-start;
+    background-color: #ffe81f;
+    color: #000000;
+    border: 2px solid #ffe81f;
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.feedback-section button:hover {
+    background-color: transparent;
+    color: #ffe81f;
+}
+
+.feedback-section button:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 3px;
+}
+
 @media screen and (min-width: 700px) {
     header {
         flex-wrap: nowrap;
