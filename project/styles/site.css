@@ -133,6 +133,10 @@ footer {
     text-align: center;
 }
 
+footer a {
+    color: white;
+}
+
 /* Battles page */
 .battles-page main {
     display: grid;
