@@ -1,0 +1,144 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+#menu {
+    cursor: pointer;
+    position: relative;
+}
+
+#menu::before {
+    content: "☰";
+    font-size: 1.8rem;
+}
+
+.navigation {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navigation a:hover {
+    color: #ffe81f;
+    text-decoration: underline;
+}
+
+#menu.show .navigation {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    z-index: 10;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+header, footer {
+    padding: 1rem;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    font-family: "Cinzel", serif;
+    color: #ffe81f;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color:#ffffff;
+    text-decoration: none;
+    display: block;
+}
+
+nav a:hover, nav a:focus {
+    color: #ffe81f;
+    text-decoration: underline;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+footer {
+    text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+    header {
+        flex-wrap: nowrap;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #menu::before {
+        content: "";
+    }
+
+    .navigation {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .navigation a {
+        padding: 0.75rem;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .card-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
