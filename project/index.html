@@ -20,12 +20,12 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="characters.html">Characters</a></li>
                 <li><a href="armies.html">Armies</a></li>
-                <li><a href="references.html">References</a></li>
+                <li><a href="battles.html">Battles</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="hero">
+        <div class="hero">
             <picture>
                 <source srcset="images/clone_wars_hero_large.jpeg" media="(min-width: 700px)">
                 <img src="images/clone_wars_hero.webp" alt="Star Wars: The Clone Wars hero image">
@@ -35,29 +35,29 @@
                 Explore the Jedi and Sith, learn about the clone troopers
                 and battle droids, and discover the conflicts that shaped the galaxy.
             </p>
-        </section>
+        </div>
         <section class="explore">
             <h2>Explore the Series</h2>
             <div class="card-container">
                 <article class="card">
-                    <img src="images/jedi.webp" alt="Jedi knights" loading="lazy">
+                    <img src="images/jedi.webp" alt="Jedi knights" class="character-image" loading="lazy">
                     <h3>Jedi</h3>
                     <p>Discover the guardians of peace and justice.</p>
                 </article>
                 <article class="card">
-                    <img src="images/sith.webp" alt="Sith warriors" loading="lazy">
+                    <img src="images/sith.webp" alt="Sith warriors" class="character-image" loading="lazy">
                     <h3>Sith</h3>
                     <p>Learn about the dark side of the Force.</p>
                 </article>
 
                 <article class="card">
-                    <img src="images/clone-troopers.webp" alt="Clone troopers" loading="lazy">
+                    <img src="images/clone-troopers.webp" alt="Clone troopers" class="character-image" loading="lazy">
                     <h3>Clone Troopers</h3>
                     <p>Meet the soldiers defending the Republic.</p>
                 </article>
 
                 <article class="card">
-                    <img src="images/battle-droids.webp" alt="Battle droids" loading="lazy">
+                    <img src="images/battle-droids.webp" alt="Battle droids" class="character-image" loading="lazy">
                     <h3>Battle Droids</h3>
                     <p>Explore the forces of the Separatist Alliance.</p>
                 </article>
@@ -66,6 +66,7 @@
     </main>
     <footer>
         <p>©<span id="currentyear"></span> | Christian Sandoya | Peru</p>
+        <p><a href="references.html">References</a></p>
         <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
     </footer>
 </body>

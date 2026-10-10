@@ -7,19 +7,22 @@ body {
 
 header {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    gap: 1rem;
 }
 
 header h1 {
     margin: 0;
     font-size: 1.5rem;
+    min-width: 0;
+    overflow-wrap: break-word;
 }
 
 #menu {
     cursor: pointer;
     position: relative;
+    flex-shrink: 0;
 }
 
 #menu::before {
@@ -54,6 +57,7 @@ header h1 {
     top: 100%;
     right: 0;
     width: 200px;
+    max-width: calc(100vw - 2rem);
     z-index: 10;
 }
 
@@ -74,6 +78,27 @@ main {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.character-image {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+.character-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.character-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
 }
 
 h1, h2, h3 {
@@ -108,6 +133,67 @@ footer {
     text-align: center;
 }
 
+/* Battles page */
+.battles-page main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.battles-page main section {
+    background-color: #111111;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.battles-page main section h2 {
+    margin-top: 0;
+    font-size: 1.4rem;
+}
+
+.battles-page main section p {
+    line-height: 1.6;
+}
+
+.battles-page main section img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin: 1rem 0;
+}
+
+.battles-page button {
+    background-color: #ffe81f;
+    color: #000000;
+    border: 2px solid #ffe81f;
+    border-radius: 4px;
+    padding: 0.7rem 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.battles-page button:hover {
+    background-color: transparent;
+    color: #ffe81f;
+}
+
+.battles-page button:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 3px;
+}
+
+.battles-page .battle-controls {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
 @media screen and (min-width: 700px) {
     header {
         flex-wrap: nowrap;
@@ -140,5 +226,14 @@ footer {
     
     .card-container {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .character-content {
+    flex-direction: row;
+    }
+
+    .battles-page main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
     }
 }
